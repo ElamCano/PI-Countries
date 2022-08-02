@@ -1,0 +1,42 @@
+.ContainerAll {
+  background: linear-gradient(
+    90deg,
+    rgba(186, 201, 217, 1) 0%,
+    rgba(118, 139, 159, 1) 50%,
+    rgba(70, 99, 129, 1) 85%
+  );
+  min-height: 100vh;
+}
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttonrefresh {
+  border-radius: 15px;
+  border: 2px solid #1f3a06;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  height: 35px;
+  margin-bottom: 30px;
+}
+.button {
+  border-radius: 15px;
+  border: 2px solid #1f3a06;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.countriesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10;
+  justify-content: space-between;
+  align-items: center;
+}
+.countriesContainer > * {
+  flex: 1 1 0;
+}

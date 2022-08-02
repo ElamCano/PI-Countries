@@ -1,0 +1,25 @@
+.navContainer {
+  background: linear-gradient(
+    90deg,
+    rgba(186, 201, 217, 1) 0%,
+    rgba(118, 139, 159, 1) 50%,
+    rgba(70, 99, 129, 1) 85%
+  );
+  padding: 20px;
+  color: black;
+  text-align: center;
+  padding: 2%;
+  display: grid;
+}
+
+.image {
+  display: flex;
+  margin-left: 15px;
+}
+.act {
+  margin-left: 1063px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
