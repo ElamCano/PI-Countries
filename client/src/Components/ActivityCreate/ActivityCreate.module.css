@@ -3,7 +3,12 @@
   font-size: 27px;
   display: flex;
   justify-content: center;
-  background-color: rgb(225, 248, 240);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 98, 133, 1) 0%,
+    rgba(18, 156, 179, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 form {
@@ -14,7 +19,7 @@ form {
   border-radius: 7px;
   margin-top: 15px;
   /*   background-color: rgb(172, 158, 158); */
-  color: rgb(95, 76, 2);
+  color: rgb(0, 0, 0);
 }
 
 select,

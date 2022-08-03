@@ -1,12 +1,17 @@
 .container {
   display: flex;
   justify-content: center;
-  background-color: rgb(92, 92, 92);
+  background: linear-gradient(
+    180deg,
+    rgba(93, 139, 103, 1) 17%,
+    rgba(18, 66, 23, 1) 63%,
+    rgba(15, 56, 17, 1) 99%
+  );
 }
 
 .detailContainer {
   display: flex;
-  background-color: rgb(177, 230, 172);
+  background-color: rgb(184, 212, 157);
   box-sizing: border-box;
   margin-top: 20px;
   flex-direction: column;
@@ -25,7 +30,7 @@
   color: var(--main-color-text);
   font-size: 20px;
   font-weight: 300;
-  background-color: rgb(133, 133, 133);
+  background-color: rgb(228, 220, 220);
   border-radius: 15px;
   width: 80%;
   margin-left: auto;

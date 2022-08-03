@@ -44,7 +44,6 @@ module.exports = {
   },
   //postea una actividad turistica
   postActivity: async (req, res, next) => {
-    //aca modificar por que recibo un objeto o json por body
     try {
       const { name, dificulty, duration, season, countriesId } = req.body;
       const exist = await Activity.findOne({
@@ -52,12 +51,8 @@ module.exports = {
           name: name,
         },
       });
-      const countries = await Country.findAll({
-        where: {
-          id: countriesId,
-        },
-      });
-      if (exist.length < 1) {
+
+      if (!exist) {
         const createActivity = await Activity.create({
           name,
           dificulty,
@@ -65,12 +60,22 @@ module.exports = {
           season,
           countriesId,
         });
-
+        const countries = await Country.findAll({
+          where: {
+            id: countriesId,
+          },
+        });
         createActivity.addCountry(countries);
         res.status(200).send(createActivity);
+      } else {
+        const countries = await Country.findAll({
+          where: {
+            id: countriesId,
+          },
+        });
+        exist.addCountry(countries);
+        res.status(200).send(exist);
       }
-      exist.addCountry(countries);
-      res.status(200).send(exist);
     } catch (error) {
       next(error);
     }

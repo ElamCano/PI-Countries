@@ -3,7 +3,6 @@ const initialState = {
   allCountries: [],
   activities: [],
   detail: [],
-  /*   page:  */
 };
 
 function rootReducer(state = initialState, action) {
@@ -97,9 +96,3 @@ function rootReducer(state = initialState, action) {
 }
 
 export default rootReducer;
-
-/* case "GET_ACTIVITIES":
-            return {
-              state,
-              activities: action.payload,
-            }; */

@@ -1,11 +1,11 @@
 const { Router } = require("express");
+const router = Router();
 const {
   getAllCountries,
   getByCode,
   postActivity,
   getActivity,
 } = require("../controllers");
-const router = Router();
 
 router.get("/countries", getAllCountries);
 router.get("/countries/:id", getByCode);

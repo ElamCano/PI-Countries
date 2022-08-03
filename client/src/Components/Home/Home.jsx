@@ -56,6 +56,7 @@ export default function Home() {
   function handleClick(e) {
     e.preventDefault();
     dispatch(getCountries());
+    setCurrentPage(1);
   }
   function handleFilterRegion(e) {
     e.preventDefault();
@@ -69,6 +70,7 @@ export default function Home() {
   }
   function handleAct(e) {
     e.preventDefault();
+    setCurrentPage(1);
     dispatch(activitiesAvailable(e.target.value));
   }
   function handleSortByName(e) {
