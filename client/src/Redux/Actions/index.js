@@ -1,13 +1,27 @@
 import axios from "axios";
 
 export const getCountries = function () {
+  return async function (dispatch) {
+    try {
+      let response = await axios.get("/countries");
+      return dispatch({
+        type: "GET_COUNTRIES",
+        payload: response.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};
+
+/* export const getCountries = function () {
   return function (dispatch) {
     return fetch("/countries")
       .then((response) => response.json())
       .then((data) => dispatch({ type: "GET_COUNTRIES", payload: data }))
       .catch((e) => console.log(e));
   };
-};
+}; */
 
 export const filterByRegion = function (payload) {
   return {
