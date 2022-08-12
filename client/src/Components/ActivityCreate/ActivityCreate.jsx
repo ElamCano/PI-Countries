@@ -10,7 +10,6 @@ export default function ActivityCreate() {
   const history = useHistory();
   const countries = useSelector((state) => state.countries);
   const [add, setAdd] = useState([]);
-
   const [error, setError] = useState({});
   const [inputActivity, setInputActivity] = useState({
     name: "",
@@ -87,6 +86,7 @@ export default function ActivityCreate() {
       ...inputActivity,
       countriesId: inputActivity.countriesId.filter((el) => el !== country),
     });
+    console.log(inputActivity);
   }
 
   return (

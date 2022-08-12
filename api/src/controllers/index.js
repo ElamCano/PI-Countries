@@ -24,7 +24,6 @@ module.exports = {
       next(error);
     }
   },
-
   //trae por code
   getByCode: async (req, res, next) => {
     const { id } = req.params;
@@ -80,7 +79,7 @@ module.exports = {
       next(error);
     }
   },
-
+  //trae las actividades creadas
   getActivity: async (req, res) => {
     const activities = await getActivities();
     res.status(200).send(activities);

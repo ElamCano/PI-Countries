@@ -1,25 +1,20 @@
 import React, { useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getDetail, restartDetail } from "../../Redux/Actions";
+import { getDetail } from "../../Redux/Actions";
 import { useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
 
-export default function Detail(props) {
+export default function Detail() {
   const dispatch = useDispatch();
   let { id } = useParams();
-  const history = useHistory();
   useEffect(() => {
     dispatch(getDetail(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   const selectCountry = useSelector((state) => state.detail);
-  /*  function handleClick() {
-    history.push("/countries");
-  } */
   return (
     <div key={selectCountry.id} className={styles.container}>
-      {/* <button onClick={handleClick}>Go Back</button> */}
       <div className={styles.detailContainer}>
         {selectCountry ? (
           <div>

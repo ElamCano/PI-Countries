@@ -9,7 +9,7 @@ export default function Card({ name, image, region, id }) {
         <h4 className="region">Region: {region}</h4>
       </div>
       <div className="imgContainer">
-        <img className="img" src={image} alt="image" />
+        <img className="img" src={image} alt="" />
       </div>
     </Link>
   );

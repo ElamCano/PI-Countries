@@ -36,6 +36,10 @@ module.exports = (sequelize) => {
       population: {
         type: DataTypes.INTEGER,
       },
+      /* clima: {
+        type: DataTypes.STRING,
+        defaultValue: "Templado",
+      }, */
     },
     { timestamps: false }
   );

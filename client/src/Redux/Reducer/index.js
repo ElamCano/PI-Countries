@@ -79,12 +79,6 @@ function rootReducer(state = initialState, action) {
         detail: action.payload,
       };
 
-    case "RESET_DETAIL":
-      return {
-        ...state,
-        detail: [],
-      };
-
     case "POST_ACTIVITY":
       return {
         ...state,

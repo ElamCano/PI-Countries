@@ -7,7 +7,7 @@ export default function NavBar() {
     <div className="navContainer">
       <Link className="cont" to="/countries">
         <figure className="image">
-          <img src={picture} width="80px" />{" "}
+          <img src={picture} width="80px" alt="" />{" "}
         </figure>
       </Link>
       <Link className="act" to="/activities">

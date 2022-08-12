@@ -25,9 +25,7 @@ export default function Home() {
     currentPage === 1 ? 0 : indexOfLastCountry - countriesInPage;
 
   useEffect(() => {
-    if (allCountries?.length === 0) {
-      dispatch(getCountries());
-    }
+    dispatch(getCountries());
   }, [dispatch]);
 
   const currentCountries = allCountries.slice(
@@ -60,6 +58,7 @@ export default function Home() {
   }
   function handleFilterRegion(e) {
     e.preventDefault();
+    setCurrentPage(1);
     dispatch(filterByRegion(e.target.value));
   }
   function handleOrderPopulation(e) {
