@@ -13,7 +13,6 @@ export const getCountries = function () {
     }
   };
 };
-
 /* export const getCountries = function () {
   return function (dispatch) {
     return fetch("/countries")

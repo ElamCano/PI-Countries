@@ -7,13 +7,7 @@ const Cards = ({ countries }) => {
     <div className="cards">
       {countries?.map((e) => {
         return (
-          <Card
-            id={e.id}
-            name={e.name}
-            image={e.img}
-            region={e.continent}
-            key={e.id}
-          />
+          <Card name={e.name} image={e.img} region={e.continent} key={e.id} />
         );
       })}
     </div>
