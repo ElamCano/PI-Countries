@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="300" width=70% src="./portada.jpg" />
+  <img height="300" width=80% src="./portada.jpg" />
 </p>
 
 pppdnfsldfa
