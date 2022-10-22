@@ -2,8 +2,8 @@
 
 # Individual Project - Henry Countries
 
-<p align="left">
-  <img height="200" src="./portada.jpg" />
+<p align="center">
+  <img height="250" src="./portada.jpg" />
 </p>
 
 ## Objetivos del Proyecto
